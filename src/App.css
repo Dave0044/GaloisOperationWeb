@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
-}
+/*------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------Generales------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  :root {
+    scroll-behavior: smooth;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+section {
+    background-color: var(--light-white);
+    padding-top: 100px;
+    padding-bottom: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+/*------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------Variables------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+
+:root {
+
+    --light-white: rgb(255, 255, 255);    
+    --light: rgb(214, 212, 212);
+    --dark: rgb(65, 65, 65);
+    --ligth-transparent: rgb(200, 200, 200, 0.5);
+    --dark-transparent: rgba(50, 50, 50, 0.5);
+    --contrast-light: rgb(41, 211, 245);
+    --contrast-dark: rgb(29, 191, 255);
+    --contrast-light-transparent: rgb(93, 224, 234, 0.5);
+    --contrast-dark-transparent: rgb(4, 4, 188, 0.5);
+    --transparent: transparent;
+    }
+    
+
+/*------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------Navbar---------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+
+
+/* Margen a la izquierda del logo */
+.navbarlogocss {
+    /* margin-left: 176px; */
+    margin-left: 101px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Margen de los links: About, Education,... a la derecha */
+.navbarlinkcss {
+    margin-right: 104px;
+    margin-left: 40px;
 }
+
+
+.dropdown-menu > li > a, .navbar-nav > li > a {
+    color: var(--dark) !important; 
+    border-radius: 5px;
+}
+
+.dropdown-menu > li > a:hover, .navbar-nav > li > a:hover {
+    color: var(--contrast-light) !important;  
+}
+
+.dropdown-menu > li > a:active, .dropdown-menu > li > a:focus, .navbar-nav > li > a.active, .navbar-nav > li > a:focus {
+    color: var(--dark) !important;
+    background-color: var(--contrast-light) !important;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------About--------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+
+.about-section-column1-img {
+    width: 50% !important; /* Establece el ancho de la imagen al 50% del contenedor */
+}
+
+
+/*------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------Contact-------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+
+.contact-section-table {
+    background-color: rgb(228, 255, 255);
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------Footer--------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+
